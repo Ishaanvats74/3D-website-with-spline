@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    @keyframes animationGradient {
+        to {
+            background-position: 200%;
+        }
+    }
+</style>
+<body class="bg-black text-gray-500 min-h-screen leading-normal">
+    <img src="gradient.png" alt="gradient" class="absolute top-0 right-0 opacity-50 z-[-1]">
+    <div class="absolute h-0 w-[30rem] top-[20%] right-0 shadow-[0_0_700px_15px_white] -rotate-30 z-[-1]"></div>
+
+
+    <!-- Nav Bar -->
+    <div class="w-full mx-auto px-8 my-0 py-0 relative overflow-hidden">
+        <header class="flex justify-between items-center py-4 px-20 z-50">
+            <h1 class="logo m-0 text-5xl font-light">MCODE</h1>
+
+            <nav class="flex items-center gap-12 ml-[-5%]">
+                <a href="#" class=" text-base tracking-widest transition-colors duration-200 ease hover:text-gray-700">COMPANY</a>
+                <a href="#" class=" text-base tracking-widest transition-colors duration-200 ease hover:text-gray-700">FEATURES</a>
+                <a href="#" class=" text-base tracking-widest transition-colors duration-200 ease hover:text-gray-700">RESOURCES</a>
+                <a href="#" class=" text-base tracking-widest transition-colors duration-200 ease hover:text-gray-700">DOCS</a>
+            </nav>
+
+            <button class=" bg-gray-700 text-black py-3 px-8 rounded-[50px] text-base font-medium transition duration-200 ease cursor-pointer hover:bg-white">SIGN IN</button>
+        </header>
+
+        <main class="flex flex-col justify-center min-h-[calc(90vh-6rem)]">
+            <div class="content max-w-[40rem] ml-[10%] z-50">
+                <div class="text-white tag-bo relative w-[18rem] h-[2.5rem] rounded-[50px] bg-[linear-gradient(to_right,_#656565,_#7f42a7,_#6600c5,_#5300a0,_#757575,_#656565)] bg-[length:200%] animation-[animationGradient_2.5s_linear_infinite] shadow-[0_0_15px_white]">
+
+                    <div class="absolute inset-1 bg-black rounded-[50px] flex items-center justify-center duration-100 ease hover:">INTRUCING &wedbar;</div>
+                </div>
+                <h1>EMAIL FOR <br> DEVELOPERS</h1>
+
+                <p class="description">
+                    the best way to reach uumans instead spam folders, 
+                    dlever transactional and marketing emails at scale.
+                </p>
+
+                <div class="button">
+                    <a href="#" class="btn-get-started">Documentation &gt;</a>
+                    <a href="#" class="btn-signing-main">Getstarted &gt;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
