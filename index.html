@@ -44,23 +44,25 @@
 
         <main class="flex flex-col justify-center min-h-[calc(90vh-6rem)]">
             <div class="content max-w-[40rem] ml-[10%] z-50">
-                <div class="text-white tag-bo relative w-[18rem] h-[2.5rem] rounded-[50px] bg-[linear-gradient(to_right,_#656565,_#7f42a7,_#6600c5,_#5300a0,_#757575,_#656565)] bg-[length:200%] animation-[animationGradient_2.5s_linear_infinite] shadow-[0_0_15px_white]">
-
-                    <div class="absolute inset-1 bg-black rounded-[50px] flex items-center justify-center duration-100 ease hover:">INTRUCING &wedbar;</div>
+                <div class="text-white relative w-[18rem] h-[2.5rem] rounded-[50px] bg-[linear-gradient(to_right,_#656565,_#7f42a7,_#6600c5,_#5300a0,_#757575,_#656565)] bg-[length:200%] animation-[animationGradient_2.5s_linear_infinite] shadow-[0_0_15px_white]">
+                    <div class="absolute inset-1 bg-black rounded-[50px] flex items-center justify-center duration-100 ease cursor-pointer hover:text-purple-800">INTRUCING &wedbar;</div>
                 </div>
-                <h1>EMAIL FOR <br> DEVELOPERS</h1>
+                <h1 class="text-6xl text-white font-semibold tracking-widest my-8 leading-tight text-[shadow:0_0_10px_rgba(128,128,128,0.418)]">EMAIL FOR <br> DEVELOPERS</h1>
 
-                <p class="description">
+                <p class="text-sm tracking-wider text-gray-500 max-w-xl">
                     the best way to reach uumans instead spam folders, 
                     dlever transactional and marketing emails at scale.
                 </p>
 
-                <div class="button">
-                    <a href="#" class="btn-get-started">Documentation &gt;</a>
-                    <a href="#" class="btn-signing-main">Getstarted &gt;</a>
+                <div class="flex gap-4 mt-12">
+                    <a href="#" class="btn-get-started border border-solid border-stone-900 py-3 px-5 rounded-[50px] text-xl font-semibold leading-tight transition-[0.02s_ease] hover:bg-[#1a1a1a]">Documentation &gt;</a>
+                    <a href="#" class="btn-signing-main bg-gray-300 text-black py-2.5 px-10 rounded-[50px] text-xl font-semibold leading-tight tracking-widest transition-[bg-gray-400_0.2s_ease] hover:bg-gray-600">Getstarted &gt;</a>
                 </div>
             </div>
         </main>
+        <spline-viewer class="absolute top-0 right-[-20%]" url="https://prod.spline.design/Hcw2X2eHRkquublw/scene.splinecode"></spline-viewer>
     </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+    
 </body>
 </html>
